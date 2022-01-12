@@ -54,7 +54,7 @@ void RecordsController::LoadEfficientRecords() {
     }
 }
 
-void RecordsController::PrintInFormat(const std::string streamName) {
+void RecordsController::PrintInFormat(const std::string& streamName) {
         std::ofstream ost{streamName};
 
         // first we sort all records by name

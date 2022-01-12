@@ -6,7 +6,7 @@ class BusRecord {
 public:
     BusRecord() {}
 
-    BusRecord(std::string tit, Time depT, Time arrT) : 
+    BusRecord(const std::string& tit, const Time& depT, const Time& arrT) : 
         companyTitle{tit}, departureTime{depT}, arrivalTime{arrT} {}
 
     std::string GetCompanyTitle() const { return companyTitle; }

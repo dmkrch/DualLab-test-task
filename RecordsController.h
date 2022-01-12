@@ -31,7 +31,7 @@ public:
     ~RecordsController() { ist.close(); }
 
     void LoadEfficientRecords();
-    void PrintInFormat(const std::string streamName);
+    void PrintInFormat(const std::string& streamName);
 
 private:
     std::ifstream ist;

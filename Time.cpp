@@ -1,6 +1,6 @@
 #include "Time.h"
 
-Time Time::operator-(Time time2) {
+Time Time::operator-(const Time& time2) {
     int mm1 = std::stoi(this->GetMinutes());
     int hh1 = std::stoi(this->GetHours());
     int mm2 = std::stoi(time2.GetMinutes());
