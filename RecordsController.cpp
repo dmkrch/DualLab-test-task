@@ -32,15 +32,15 @@ void RecordsController::LoadEfficientRecords() {
 
         // if records are "coupled", we need to compare wich is better and do appropriate action
         for (auto& currRecord : allRecords) {
-            if (areCoupledRecords(newRecord, currRecord)) {
+            if (AreCoupledRecords(newRecord, currRecord)) {
                 coupledRecordsFlag = true;
 
-                if (areSameRecordsAccordingTime(newRecord, currRecord)) {
+                if (AreSameRecordsAccordingTime(newRecord, currRecord)) {
                     if (newRecord.GetCompanyTitle()=="Posh" && currRecord.GetCompanyTitle()=="Grotty")
                         currRecord=newRecord;
                     break;
                 }
-                else if (isFirstRecordBetterThanSecond(newRecord, currRecord))
+                else if (IsFirstRecordBetterThanSecond(newRecord, currRecord))
                     currRecord=newRecord;
 
                 break;

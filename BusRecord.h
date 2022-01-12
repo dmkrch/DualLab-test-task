@@ -27,6 +27,6 @@ private:
 
 std::istream& operator>>(std::istream& is, BusRecord& busRecord);
 
-bool areCoupledRecords(BusRecord& rec1, BusRecord& rec2);
-bool isFirstRecordBetterThanSecond(BusRecord& rec1, BusRecord& rec2);
-bool areSameRecordsAccordingTime(BusRecord& rec1, BusRecord& rec2);
+bool AreCoupledRecords(BusRecord& rec1, BusRecord& rec2);
+bool IsFirstRecordBetterThanSecond(BusRecord& rec1, BusRecord& rec2);
+bool AreSameRecordsAccordingTime(BusRecord& rec1, BusRecord& rec2);
